@@ -1,4 +1,97 @@
-2024-08-11 16:35:18,785 ERROR: Exception on /user/Edward [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
+2024-08-07 18:03:48,078 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-07 18:08:11,638 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-07 18:08:37,950 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-07 18:32:04,663 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-07 18:32:17,053 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-07 18:32:22,485 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 15:57:03,576 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:07:45,923 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:08:29,176 ERROR: Exception on /user/win [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/app/routes.py", line 77, in user
+    return render_template('user.html', user=user, posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/ezhong/Documents/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 17, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 487, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-08-11 16:08:36,885 ERROR: Exception on /user/win [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
+Traceback (most recent call last):
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/app/routes.py", line 77, in user
+    return render_template('user.html', user=user, posts=posts)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/ezhong/Documents/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 17, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 487, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-08-11 16:09:11,596 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:23:32,210 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:26:59,140 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:27:00,185 ERROR: Exception on /user/Edward [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
 Traceback (most recent call last):
   File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
     response = self.full_dispatch_request()
@@ -35,75 +128,7 @@ Traceback (most recent call last):
     ^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 33, in block 'content'
     {% for post in posts %}
-TypeError: 'Select' object is not iterable
-2024-08-11 16:35:31,199 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
-2024-08-11 16:35:32,176 ERROR: Exception on /user/Edward [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
-Traceback (most recent call last):
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/app/routes.py", line 72, in user
-    posts = user.own_posts().all()
-            ^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'Select' object has no attribute 'all'
-2024-08-11 16:36:11,354 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
-2024-08-11 16:41:09,368 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
-2024-08-11 16:46:03,102 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
-2024-08-11 16:46:05,583 ERROR: Exception on /user/win [GET] [in /Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py:838]
-Traceback (most recent call last):
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1473, in wsgi_app
-    response = self.full_dispatch_request()
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 882, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 880, in full_dispatch_request
-    rv = self.dispatch_request()
-         ^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 865, in dispatch_request
-    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
-    return current_app.ensure_sync(func)(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/app/routes.py", line 81, in user
-    return render_template('user.html', user=user, posts=posts, form=form)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 150, in render_template
-    return _render(app, template, context)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/templating.py", line 131, in _render
-    rv = template.render(context)
-         ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 1304, in render
-    self.environment.handle_exception()
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/jinja2/environment.py", line 939, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "/Users/ezhong/Documents/microblog/app/templates/user.html", line 1, in top-level template code
-    {% extends "base.html" %}
-  File "/Users/ezhong/Documents/microblog/app/templates/base.html", line 14, in top-level template code
-    <a href="{{ url_for('explore') }}">Explore</a>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1084, in url_for
-    return self.handle_url_build_error(error, endpoint, values)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/flask/app.py", line 1073, in url_for
-    rv = url_adapter.build(  # type: ignore[union-attr]
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/werkzeug/routing/map.py", line 924, in build
-    raise BuildError(endpoint, values, method, self)
-werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'explore'. Did you mean 'edit_profile' instead?
-2024-08-11 16:47:12,433 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
-2024-08-11 16:51:53,917 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+  File "/Users/ezhong/Documents/microblog/venv/lib/python3.11/site-packages/sqlalchemy/orm/writeonly.py", line 581, in __iter__
+    raise TypeError(
+TypeError: WriteOnly collections don't support iteration in-place; to query for collection items, use the select() method to produce a SQL statement and execute it with session.scalars().
+2024-08-11 16:35:17,121 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
