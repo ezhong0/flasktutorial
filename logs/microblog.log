@@ -107,3 +107,7 @@ Traceback (most recent call last):
 werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'explore'. Did you mean 'edit_profile' instead?
 2024-08-11 16:47:12,433 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
 2024-08-11 16:51:53,917 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:42]
+2024-08-11 16:56:19,228 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
+2024-08-11 17:16:03,909 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
+2024-08-11 17:16:29,900 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
+2024-08-11 17:20:31,729 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
