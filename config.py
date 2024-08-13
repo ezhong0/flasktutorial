@@ -12,6 +12,7 @@ class Config:
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['your-email@example.com']
     POSTS_PER_PAGE = 25
+    LANGUAGES = ['en', 'es']
     # MAIL_SERVER=smtp.googlemail.com
     # MAIL_PORT=587
     # MAIL_USE_TLS=1
