@@ -44,3 +44,4 @@ jinja2.exceptions.TemplateNotFound: bootstrap_wtf.html
 2024-08-13 13:25:42,156 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
 2024-08-13 13:26:16,343 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
 2024-08-13 13:27:15,149 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:44]
+2024-08-13 13:41:26,791 INFO: Microblog startup [in /Users/ezhong/Documents/microblog/app/__init__.py:46]
